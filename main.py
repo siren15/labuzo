@@ -10,7 +10,7 @@ if __name__ == "__main__":
     heslo = os.getenv('heslo') # načítaj heslo z .env súboru
     try:
         chrome = uc.Chrome() # definujeme chrome ako prehliadač ktorý používame
-        chrome.get('http://gmail.com') # načítame gmail.com
+        chrome.get('https://gmail.com') # načítame gmail.com
 
         email_element = chrome.find_element(By.NAME, 'identifier') # nájdeme element pre meno podľa jeho mena
         email_element.send_keys(meno) # nakopírujeme naše meno načítané z .env súboru
